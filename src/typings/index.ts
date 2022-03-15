@@ -15,5 +15,16 @@ export interface WebhookPayload {
     votes: number,
     test: boolean,
     mode: string,
-    payload: string 
+    payload: string,
+    timestamp: string,
+    query:
+    |{
+        [key: string]: string;
+    }| string; 
+}
+
+declare module 'express' {
+    export interface Request {
+        votes?: WebhookPayload;
+    }
 }

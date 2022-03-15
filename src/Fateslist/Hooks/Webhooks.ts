@@ -39,7 +39,7 @@ export class Webhook {
 
     public hookListener(fn: (payload: WebhookPayload, req?: Request, res?: Response, next?: NextFunction) => void | Promise<void>) {
         return async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-            const response = await this._parseRequest(res, res);
+            const response = await this._parseRequest(req, res);
             if (!response) return;
             try {
                 await fn(response, req, res, next);
@@ -58,7 +58,7 @@ export class Webhook {
             const response = await this._parseRequest(req, res);
             if (!response) return;
             res.sendStatus(204);
-            req.vote = response;
+            req.votes = response;
             next();
         };
     }
