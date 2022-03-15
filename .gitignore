@@ -1,0 +1,11 @@
+node_modules
+package-lock.json
+
+.vscode
+.npmrc
+.github
+
+*.js
+*.d.ts
+
+util

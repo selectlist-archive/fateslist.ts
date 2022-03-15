@@ -1,0 +1,10 @@
+node_modules
+
+.vscode
+.npmrc
+.github
+
+*.js
+*.d.ts
+
+util
