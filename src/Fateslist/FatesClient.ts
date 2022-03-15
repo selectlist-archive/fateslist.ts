@@ -62,7 +62,7 @@ export class FatesListClient extends EventEmitter {
     /**
      * POST BOT STATISTICS (SERVERS AND SHARDS)
      */
-     public async postBotStats(stats: BotStats, botID: Snowflake): Promise<BotStats> {
+     public async postStats(stats: BotStats, botID: Snowflake): Promise<BotStats> {
 
         if (!stats) throw new Error(`[Fates API] You didn\'t provide any stats to post.`);
 
