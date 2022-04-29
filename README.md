@@ -6,13 +6,13 @@ Types Friendly Node SDK for the Fates List API
 ## Install
 ```diff
 + npm
-npm install fates-sdk
+npm install fates-api
 + yarn
-yarn add fates-sdk
+yarn add fates-api
 ```
 ## Usage
 ```js
-const { FatesClient } = require("fates-sdk");
+const { FatesClient } = require("fates-api");
 
 const fates = new FatesClient({
     token: "Api key", // Fates List API Token
@@ -33,7 +33,7 @@ fates.log("Text");
 
 ## Example
 ```js
-const { FatesClient } = require("fates-sdk");
+const { FatesClient } = require("fates-api");
 
 const client = new Sentcord({
     token: "E2BT0ivIoSgE4tEQdIJXVLv31n0mOlc5gn7XYVyUhZ9kONz3IkIhZP", 

@@ -1,7 +1,7 @@
 {
-  "name": "fates-sdk",
+  "name": "fates-api",
   "description": "Official Node SDK for the Fates List API",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
